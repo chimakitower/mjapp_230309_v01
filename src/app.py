@@ -10,7 +10,7 @@ from function import *
 #　xは1行13列のndarrayでIDとしたい 
 def output_predict(x): 
     # 学習済みモデル（iris.pkl）を読み込み
-    model = joblib.load('./src/mjapp.pkl')
+    model = joblib.load('/src/mjapp.pkl')
     # x = get_onehot(x)
     # x = flatten(x)
     pred_label = model.predict(x.reshape(1, -1))
