@@ -41,7 +41,7 @@ fsspec==2023.1.0
 
 
 
-gnutls==3.6.15
+
 google-auth==2.16.0
 google-auth-oauthlib==0.4.6
 greenlet==2.0.1
