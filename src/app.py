@@ -193,11 +193,11 @@ def predicts():
     elif request.method == 'GET':
         import os
         path = os.getcwd()
-        print(path)
+        print(path) 
  
 
         return render_template('index.html', forms=tehaiForm, path_val=path)
 
 # アプリケーションの実行
 if __name__ == '__main__':
-    app.run()
+    app.run() 
