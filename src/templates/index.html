@@ -1,0 +1,99 @@
+<title>MJ Predict App</title>
+<style>
+#wrapper {
+    text-align: center;
+}
+</style>
+
+<div id="wrapper">
+  <h1>3人麻雀の6巡目の手牌を入力して、<br>
+        失点するかしないか予測します。</h1>
+    <h3>下記の例のように記入してください<br>
+        例：ピンズの3→「3p」<br>
+        例：マンズの9→「9m」<br>
+        例：ソーズの7→「7s」<br>
+        例：南→「南」</h3>
+  <form method="post">
+    {{ forms.csrf_token }}
+
+    {{ forms.tehai1.label }}<br>
+    {{ forms.tehai1 }}<br>
+    {% for error in forms.tehai1.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai2.label }}<br>
+    {{ forms.tehai2 }}<br>
+    {% for error in forms.tehai2.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai3.label }}<br>
+    {{ forms.tehai3 }}<br>
+    {% for error in forms.tehai3.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai4.label }}<br>
+    {{ forms.tehai4 }}<br>
+    {% for error in forms.tehai4.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai5.label }}<br>
+    {{ forms.tehai5 }}<br>
+    {% for error in forms.tehai5.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai6.label }}<br>
+    {{ forms.tehai6 }}<br>
+    {% for error in forms.tehai6.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai7.label }}<br>
+    {{ forms.tehai7 }}<br>
+    {% for error in forms.tehai7.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai8.label }}<br>
+    {{ forms.tehai8 }}<br>
+    {% for error in forms.tehai8.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai9.label }}<br>
+    {{ forms.tehai9 }}<br>
+    {% for error in forms.tehai9.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai10.label }}<br>
+    {{ forms.tehai10 }}<br>
+    {% for error in forms.tehai10.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai11.label }}<br>
+    {{ forms.tehai11 }}<br>
+    {% for error in forms.tehai11.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai12.label }}<br>
+    {{ forms.tehai12 }}<br>
+    {% for error in forms.tehai12.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.tehai13.label }}<br>
+    {{ forms.tehai13 }}<br>
+    {% for error in forms.tehai13.errors %}
+    <div>{{ error }}</div>
+    {% endfor %}<br>
+
+    {{ forms.submit }}
+  </form>
+</div>
