@@ -196,7 +196,7 @@ def predicts():
         print(path)
  
 
-        return render_template('index.html', forms=tehaiForm)
+        return render_template('index.html', forms=tehaiForm, path_val=path)
 
 # アプリケーションの実行
 if __name__ == '__main__':
