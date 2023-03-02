@@ -64,17 +64,7 @@ kiwisolver==1.4.4
 
 
 
-libvpx==1.10.0
-libwebp==1.2.4
-libwebp-base==1.2.4
-libxml2==2.9.14
-libzlib==1.2.13
-lightgbm==3.3.5
-lightning-utilities==0.6.0
-llvm-openmp==14.0.6
-lz4-c==1.9.4
-mako==1.2.4
-markdown==3.4.1
+
 markupsafe==2.1.1
 matplotlib-base==3.6.2
 matplotlib-inline==0.1.6
