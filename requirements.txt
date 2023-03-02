@@ -81,11 +81,3 @@ sqlalchemy==1.4.39
 werkzeug==2.1.2
 wheel==0.37.1
 wtforms==3.0.1
-x264==1!152.20180806
-xz==5.2.8
-yaml==0.2.5
-yarl==1.8.1
-zeromq==4.3.4
-zipp==3.11.0
-zlib==1.2.13
-zstd==1.5.2
