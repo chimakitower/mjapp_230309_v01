@@ -7,7 +7,7 @@ from function import *
 
 
 #　学習済みモデルをもとに推論する関数
-#　xは1行13列のndarrayでIDとしたい
+#　xは1行13列のndarrayでIDとしたい 
 def output_predict(x):
     # 学習済みモデル（iris.pkl）を読み込み
     model = joblib.load('./src/mjapp.pkl')
