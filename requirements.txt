@@ -61,8 +61,7 @@ jupyter_client==7.4.8
 jupyter_core==5.1.1
 kiwisolver==1.4.4
 
-lcms2==2.14
-lerc==3.0
+
 libblas==3.9.0
 libbrotlicommon==1.0.9
 libbrotlidec==1.0.9
