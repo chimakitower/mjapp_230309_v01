@@ -191,6 +191,11 @@ def predicts():
 
     # GET 　メソッドの定義
     elif request.method == 'GET':
+        import os
+        path = os.getcwd()
+        print(path)
+ 
+
         return render_template('index.html', forms=tehaiForm)
 
 # アプリケーションの実行
