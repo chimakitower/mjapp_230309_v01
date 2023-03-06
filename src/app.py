@@ -16,7 +16,7 @@ def output_predict(x):
     pred_label = model.predict(x.reshape(1, -1))
     return pred_label
 
-# 推論したラベルから花の名前を返す関数
+# 推論したラベルから予測結果を返す関数
 def getName(label):
     if label == 0:
         return '失点しなさそう'
@@ -191,12 +191,12 @@ def predicts():
 
     # GET 　メソッドの定義
     elif request.method == 'GET':
-        import os
-        path = os.getcwd()
-        print(path) 
+        # import os
+        # path = os.getcwd()
+        # print(path) 
  
 
-        return render_template('index.html', forms=tehaiForm, path_val=path)
+        return render_template('index.html', forms=tehaiForm)
 
 # アプリケーションの実行
 if __name__ == '__main__':
