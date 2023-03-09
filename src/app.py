@@ -70,7 +70,7 @@ def predicts():
 
     # GET 　メソッドの定義
     elif request.method == 'GET':
-        return render_template('index.html', forms=tehaiForm)
+        return render_template('index.html', forms=tehaiForm, tehai=pai_list)
 
 # アプリケーションの実行
 if __name__ == '__main__':
