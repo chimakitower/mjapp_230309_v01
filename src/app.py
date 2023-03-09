@@ -57,6 +57,7 @@ def predicts():
             return render_template('index.html', forms=tehaiForm)
         # 条件に当てはまる場合の、推論を実行
         else:
+            input_tehai = request.form['tehai']
             pai = str(request.form['tehai'])
             pai_list = split_pai(pai)
             x = np.array(pai_list)
@@ -66,7 +67,7 @@ def predicts():
             x = flatten(x)
             pred = output_predict(x)
             output_ = getName(pred)
-            return render_template('result.html', output=output_, tehai=pai_list)
+            return render_template('result.html', output=output_, tehai=input_tehai)
 
     # GET 　メソッドの定義
     elif request.method == 'GET':
