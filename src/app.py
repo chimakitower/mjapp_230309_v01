@@ -66,11 +66,11 @@ def predicts():
             x = flatten(x)
             pred = output_predict(x)
             output_ = getName(pred)
-            return render_template('result.html', output=output_)
+            return render_template('result.html', output=output_, tehai=pai_list)
 
     # GET 　メソッドの定義
     elif request.method == 'GET':
-        return render_template('index.html', forms=tehaiForm, tehai=pai_list)
+        return render_template('index.html', forms=tehaiForm)
 
 # アプリケーションの実行
 if __name__ == '__main__':
